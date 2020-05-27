@@ -2,3 +2,4 @@
 *.pem
 *.crt
 *.key
+install/tiller-rbac.yaml
