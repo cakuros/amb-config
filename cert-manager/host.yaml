@@ -10,4 +10,4 @@ spec:
     name: ambassador-certs
   requestPolicy:
     insecure:
-      action: Redirect
+      action: Route

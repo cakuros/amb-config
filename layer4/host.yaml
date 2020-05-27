@@ -1,0 +1,28 @@
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: my-host
+spec:
+  hostname: gke.35.237.242.24.nip.io
+  acmeProvider:
+    authority: none
+  tlsSecret:
+    name: ambassador-certs
+  requestPolicy:
+    insecure:
+      action: Route
+      additionalPort: 8080
+
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: my-host-cleartext
+spec:
+  hostname: clear.35.237.242.24.nip.io
+  acmeProvider:
+    authority: none
+  requestPolicy:
+    insecure:
+      action: Route
+      additionalPort: 8080
