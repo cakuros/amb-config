@@ -37,4 +37,4 @@ spec:
   ports:
   - protocol: TCP
     port: 30080
-    targetPort: 30180
+    targetPort: 30080

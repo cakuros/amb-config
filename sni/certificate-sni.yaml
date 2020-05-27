@@ -15,6 +15,6 @@
       name: letsencrypt-prod
       kind: ClusterIssuer
     dnsNames:
-    - gke.35.237.242.24.nip.io
-    - host1.35.237.242.24.nip.io
-    - host2.35.237.242.24.nip.io
+    - {{ambassador_host}}
+    - {{host1.example.com}}
+    - {{host2.example.com}}

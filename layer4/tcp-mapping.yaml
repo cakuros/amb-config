@@ -5,4 +5,4 @@ metadata:
   name:  nc-mapping
 spec:
   port: 30080
-  service: busybox-service
+  service: busybox-service:30080

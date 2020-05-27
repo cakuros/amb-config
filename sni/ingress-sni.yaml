@@ -6,14 +6,14 @@ metadata:
     kubernetes.io/ingress.class: ambassador
 spec:
   rules:
-  - host: host1.35.237.242.24.nip.io
+  - host: {{host1.example.com}}
     http:
       paths:
       - path: /
         backend:
           serviceName: quote
           servicePort: 80
-  - host: host2.35.237.242.24.nip.io
+  - host: {{host2.example.com}}
     http:
       paths:
       - path: /

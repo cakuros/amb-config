@@ -11,4 +11,4 @@ service:
     targetPort: 8443
   - name: tcp
     port: 30080
-    targetPort: 30081
+    targetPort: 30080

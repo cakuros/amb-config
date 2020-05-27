@@ -3,7 +3,7 @@ kind: Host
 metadata:
   name: sni-host1
 spec:
-  hostname: host1.35.237.242.24.nip.io
+  hostname: {{host1.example.com}}
   acmeProvider:
     authority: none
   tlsSecret:
@@ -15,7 +15,7 @@ kind: Host
 metadata:
   name: sni-host2
 spec:
-  hostname: host2.35.237.242.24.nip.io
+  hostname: {{host2.example.com}}
   acmeProvider:
     authority: none
   tlsSecret:
