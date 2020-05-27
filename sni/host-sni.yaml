@@ -1,0 +1,22 @@
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: sni-host1
+spec:
+  hostname: host1.35.237.242.24.nip.io
+  acmeProvider:
+    authority: none
+  tlsSecret:
+    name: ambassador-certs
+
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: sni-host2
+spec:
+  hostname: host2.35.237.242.24.nip.io
+  acmeProvider:
+    authority: none
+  tlsSecret:
+    name: ambassador-certs
